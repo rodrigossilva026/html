@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Biblioteca de Filmes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <section class="hero is-fullheight is-light">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="box">
+                    <h1 class="title has-text-primary">Login</h1>
+                    <p class="subtitle has-text-grey">Acesse sua conta para explorar nossa biblioteca de filmes 🎬</p>
+
+                    <!-- Formulário de Login -->
+                    <form id="loginForm">
+                        <div class="field">
+                            <label class="label">Usuário</label>
+                            <div class="control">
+                                <input type="text" class="input" id="username" placeholder="Digite seu usuário" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Senha</label>
+                            <div class="control">
+                                <input type="password" class="input" id="password" placeholder="Digite sua senha" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button is-primary is-fullwidth mt-3">Entrar</button>
+
+                        <p class="has-text-grey mt-3">
+                            <a href="#">Esqueci minha senha</a> | <a href="#">Criar conta</a>
+                        </p>
+                    </form>
+
+                    <div id="notification" class="notification is-success is-hidden">
+                        Login realizado com sucesso! 🎉
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
